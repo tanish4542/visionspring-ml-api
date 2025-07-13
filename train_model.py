@@ -26,6 +26,6 @@ joblib.dump(model, "model.pkl")
 joblib.dump(X.columns.tolist(), "X_columns.pkl")
 
 # Save encoded data as reference
-df_encoded.to_csv("visionspring_inventory_forecasting_data_encoded.csv", index=False)
+df_encoded.to_csv("visionspring_inventory_forecasting_data.csv", index=False)
 
 print("✅ model.pkl, X_columns.pkl, and encoded_reference.csv saved!")
