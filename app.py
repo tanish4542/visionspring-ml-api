@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Load model and reference data
 model = joblib.load("model.pkl")
 X_columns = joblib.load("X_columns.pkl")
-df_reference = pd.read_csv("encoded_reference.csv")
+df_reference = pd.read_csv("visionspring_inventory_forecasting_data_encoded.csv")
 
 
 def predict_frames_and_inventory_by_location(location_name, model, X_columns, df_reference):
